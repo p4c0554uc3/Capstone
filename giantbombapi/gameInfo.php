@@ -90,13 +90,14 @@ if (isset($_POST['gameName'])) {
 			// Notice to the user if there's no franchise.
 			echo "Notice: This game does not belong to any franchise.  It will appear as N/A." . "<br>";
 		}
-			echo $gameName . " successfully added to the database.";
+			echo $gameName . " successfully added to the favorite games list.";
 			}else {
 				// Display an error message to the user if no information was found for the game ID
 				echo "Unable to retrieve game information. (Does the game exist?)";
 			}
 			
-			echo "<br><br><a href='gameSearch.php'>Go back to search</a>";
+			echo "<br><br><a href='gameSearch.php'>Go back to search</a> or view your favorite games <a href='favoriteGames.php'>here</a>.";
+			echo "<br><br><a href='index.php'>Return to Homepage</a>";
 		} 
 ?>
 

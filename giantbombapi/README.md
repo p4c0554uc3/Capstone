@@ -11,10 +11,12 @@ includes/database.php: Used to hold database information.
 
 includes/localhostdatabase.php: Used to hold localhost database information.
 
-gameSearch.php: Used to search for a video game.
-
 gameInfo.php: Used to extract information about a video game.
 
 testdatabaseconn.php: Used to test the database connection.
 
 persona5royal.php: Used to extract information about the video game "Persona 5 Royal".
+
+gameSearch.php: Used to search for a video game.
+
+favoriteGames.php: Displays the list of games taken from the games database.  This is how the user will view the data they inserted.
