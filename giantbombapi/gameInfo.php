@@ -97,7 +97,7 @@ if (isset($_POST['gameName'])) {
 			}
 			
 			echo "<br><br><a href='gameSearch.php'>Go back to search</a> or view your favorite games <a href='favoriteGames.php'>here</a>.";
-			echo "<br><br><a href='index.php'>Return to Homepage</a>";
+			echo "<br><br><a href='../index.php'>Return to Homepage</a>";
 		} 
 ?>
 

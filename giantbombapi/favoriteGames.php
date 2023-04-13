@@ -69,7 +69,7 @@ $conn->close();
                 echo "<p>Overview: " . $game['overview'] . "</p>";
                 echo "<p>Genres: " . $game['genres'] . "</p>";
                 echo "<p>Franchises: " . $game['franchises'] . "</p>";
-				echo "<a href='index.php'>Return to Homepage</a>";
+				echo "<a href='../index.php'>Return to Homepage</a>";
                 echo "</div>";
                 echo "<img src='" . $game['image_url'] . "' alt='" . $game['name'] . " Box Art'>";
                 echo "</div>";

@@ -44,6 +44,6 @@ modifying the files. */
 		<input type="text" name="gameName" id="gameName">
 		<input type="submit" value="Search">
 	</form>
-	<?php echo "<a href='index.php'>Return to Homepage</a>"; ?>
+	<?php echo "<a href='../index.php'>Return to Homepage</a>"; ?>
 </body>
 </html>
