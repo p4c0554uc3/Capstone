@@ -6,6 +6,7 @@
 	<br><br><a href="giantbombapi/favoriteGames.php">Giant Bomb API Favorite Games</a>
 	<br><br><a href="Valorant/Jolade_Stage3.php">Valorant API Data</a>
 	<br><br><a href="capstoneserverstyle.php">Apex Stats</a>
+	<br><br><a href="owl.php">Overwatch League API Data</a>
  <?php 
     require 'includes/footer.php'; 
 ?>
