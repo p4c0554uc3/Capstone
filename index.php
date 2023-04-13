@@ -1,9 +1,9 @@
 <?php
     require 'includes/header.php'; 
 ?>
-	<a href="view.php">Clash Royale Data</a>
-	<br><br><a href="giantbombapi/gameSearch.php">Game Search</a>
-	<br><br><a href="giantbombapi/favoriteGames.php">Favorite Games</a>
+	<br><br><a href="view.php">Clash Royale API Data</a>
+	<br><br><a href="giantbombapi/gameSearch.php">Giant Bomb API Game Search</a>
+	<br><br><a href="giantbombapi/favoriteGames.php">Giant Bomb API Favorite Games</a>
 
  <?php 
     require 'includes/footer.php'; 
