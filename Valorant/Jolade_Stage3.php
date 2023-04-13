@@ -1,5 +1,5 @@
 <?php
-include 'Jolade_Capstone.php';
+include 'Jolade_APIData.php';
 
 $database = 'sql9604955'; 
 $host = 'sql9.freemysqlhosting.net';
