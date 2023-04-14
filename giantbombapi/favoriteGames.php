@@ -20,7 +20,7 @@ $conn->close();
         * { font-family: Helvetica, sans-serif; }
         .header {
             font-size: 40px;
-            color: blue;
+            color: darkorange;
             text-align: center;
         }
         img {

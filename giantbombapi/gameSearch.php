@@ -8,12 +8,12 @@ modifying the files. */
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Game Search</title>
+    <title>Add a Game</title>
     <style>
         * { font-family: Helvetica, sans-serif; }
         .header {
             font-size: 40px;
-            color: blue;
+            color: darkorange;
             text-align: center;
         }
         img {
