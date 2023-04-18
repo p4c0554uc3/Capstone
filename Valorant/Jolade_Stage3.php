@@ -19,6 +19,7 @@ $mysqli->close();
 ?>
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<style>
 			*{ font-family: Helvetica;}
@@ -44,12 +45,22 @@ $mysqli->close();
 			body{
 				background-image: url(ValorantWallpaper.jpg);
 			}
+			#home{
+				font-family: Helvetica;
+				text-align: center;
+				font-size: 20px;
+				position: relative;
+				left: 720px;
+				bottom: 30px;
+			}
 		</style>
 		<title>Capstone Stage 3</title>
 	</head>
 	
 	<body>
 		<h1 class = "header">Valorant API Data</h1>
+		<br></br>
+		<a id="home" href="../index.php">Return to home page</a>
 		<table>
 			<tr>
 				<th>Valorant Agent</th>
