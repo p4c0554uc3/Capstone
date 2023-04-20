@@ -1,6 +1,6 @@
 <?php
 
-$url = 'https://na.api.riotgames.com/val/content/v1/contents?api_key=RGAPI-66224a48-064a-4a3e-8252-b2ab3f8acf9f';
+$url = 'https://na.api.riotgames.com/val/content/v1/contents?api_key=RGAPI-8ba9eb38-d51b-45cd-bf5e-7b58744d63b5';
   
 $curl = curl_init($url);
 

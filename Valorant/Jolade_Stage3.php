@@ -13,7 +13,7 @@ if ($mysqli->connect_error) {
     $mysqli->connect_error);
 }
 
-$sql = " SELECT * FROM valorant";
+$sql = " SELECT * FROM `Valorant Leaderboards`";
 $result = $mysqli->query($sql);
 $mysqli->close();
 ?>
@@ -28,59 +28,82 @@ $mysqli->close();
 				text-align: center;
 				font-size: 40px;
 				position: relative;
-				left: 150px;
+				left: 50px;
 			}
 			table, td, th{
 				border: 1px solid black;
 				font-weight: bold;
-				color: white;
+				color: black;
 			}
 			th{
 				color: black;
 			}
 			table{
 				position: relative;
-				left: 750px;
-			}
-			body{
-				background-image: url(ValorantWallpaper.jpg);
+				left: 50px;
 			}
 			#home{
 				font-family: Helvetica;
 				text-align: center;
 				font-size: 20px;
 				position: relative;
-				left: 720px;
+				left: 50px;
 				bottom: 30px;
 			}
+			#wallpaper{
+				position: absolute;
+				left: 800px;
+				top: 75px;
+			}
+			#table-wrap{
+				position: relative;
+				
+			}
+			#table-scroll{
+				position: relative;
+				height:510px;
+				overflow:auto;
+				right: 0;
+			}
+			#table-scroll, table {
+				
+			}
+			#table-wrap, table, th, td{
+				
+			}
 		</style>
-		<title>Capstone Stage 3</title>
+		<title>Valorant Leaderboards</title>
 	</head>
 	
 	<body>
-		<h1 class = "header">Valorant API Data</h1>
+		<h1 class = "header">Valorant Top 100 NA</h1>
 		<br></br>
 		<a id="home" href="../index.php">Return to home page</a>
-		<table>
-			<tr>
-				<th>Valorant Agent</th>
-				<th>Map</th>
-				<th>Gun Skin</th>
-				<th>Sprays</th>
-			</tr>
-			<?php
-				while($rows=$result->fetch_assoc())
-				{
-			?>
-			<tr>
-				<td><?php echo $rows['agents'];?></td>
-				<td><?php echo $rows['maps'];?></td>
-				<td><?php echo $rows['skins'];?></td>
-				<td><?php echo $rows['sprays'];?></td>
-			</tr>
-			<?php
-				}
-			?>
-		</table>
+		<img id="wallpaper" src="ValLogo.jpg" alt="Valorant Agents Image" style="width:1086.47px;height:812.03px;">
+		<div id="table-wrap">
+			<div id="table-scroll">
+				<table>
+					<tr>
+						<th>PlayerName</th>
+						<th>Rank</th>
+						<th>Ranked Rating</th>
+						<th>Wins</th>
+					</tr>
+					<?php
+						while($rows=$result->fetch_assoc())
+						{
+					?>
+					<tr>
+						<td><?php echo $rows['gameName'] . "#" . $rows['tagLine'];?></td>
+						<td><?php echo $rows['leaderboardRank'];?></td>
+						<td><?php echo $rows['rankedRating'];?></td>
+						<td><?php echo $rows['numberOfWins'];?></td>
+					</tr>
+					<?php
+						}
+					?>
+				</table>
+			</div>
+		</div>
 	</body>
 </html>
