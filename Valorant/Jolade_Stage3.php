@@ -52,7 +52,7 @@ $mysqli->close();
 			}
 			#wallpaper{
 				position: absolute;
-				left: 800px;
+				left: 600px;
 				top: 75px;
 			}
 			#table-wrap{
@@ -79,14 +79,14 @@ $mysqli->close();
 		<h1 class = "header">Valorant Top 100 NA</h1>
 		<br></br>
 		<a id="home" href="../index.php">Return to home page</a>
-		<img id="wallpaper" src="ValLogo.jpg" alt="Valorant Agents Image" style="width:1086.47px;height:812.03px;">
+		<img id="wallpaper" src="ValLogo.jpg" alt="Valorant Agents Image" style="width:722.5px;height:540px;">
 		<div id="table-wrap">
 			<div id="table-scroll">
 				<table>
 					<tr>
-						<th>PlayerName</th>
+						<th>Player Name</th>
 						<th>Rank</th>
-						<th>Ranked Rating</th>
+						<th>Ranked Rating (RR)</th>
 						<th>Wins</th>
 					</tr>
 					<?php
