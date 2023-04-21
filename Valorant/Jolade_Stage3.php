@@ -24,7 +24,7 @@ $mysqli->close();
 		<style>
 			*{ font-family: Helvetica;}
 			.header{
-				color: darkorange;
+				color: #000080;
 				text-align: center;
 				font-size: 40px;
 				position: relative;
@@ -75,7 +75,7 @@ $mysqli->close();
 		<title>Valorant Leaderboards</title>
 	</head>
 	
-	<body>
+	<body style="background-color: #d8e0e8;">
 		<h1 class = "header">Valorant Top 100 NA</h1>
 		<br></br>
 		<a id="home" href="../index.php">Return to home page</a>

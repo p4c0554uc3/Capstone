@@ -1,7 +1,26 @@
 <?php 
 require 'includes/auth.php';
 require 'includes/database.php';
-
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Game</title>
+    <style>
+        * { font-family: Helvetica, sans-serif; }
+        .header {
+            font-size: 40px;
+            color: #000080;
+			font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #d8e0e8;">
+    <div class="header">
+        Add Game
+    </div>
+<?php 
 /*
 # This webpage extracts information about a video game using the first search result on the
 Giantbomb website with the Giantbomb API, storing it into the database.
@@ -100,4 +119,5 @@ if (isset($_POST['gameName'])) {
 			echo "<br><br><a href='../index.php'>Return to Homepage</a>";
 		} 
 ?>
-
+</body>
+</html>

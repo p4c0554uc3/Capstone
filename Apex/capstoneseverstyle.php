@@ -1,19 +1,37 @@
-<!DOCTYPE html>
-<html>
-<body >
-
-<h1><FONT COLOR=orange>Apex Stat Leader For PSN</h1>
-<a id="home" href="../index.php">Return to home page</a>
-<img src="apex.jpg" alt="Unlucky" width="500" height="400">
-<style>
-*{ font-family: Fantasy;}
-
-</style>
-
 <?php
 
 require 'database.php';
+?>
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 class="header">Apex Stat Leader For PSN</h1>
+<a id="home" href="../index.php">Return to home page</a>
+<style>
+        * { font-family: Helvetica, sans-serif; }
+        .header {
+            font-size: 40px;
+            color: #000080;
+            text-align: center;
+        }
+		body {
+		  background-color: #d8e0e8;
+		}
+		table, td, th{
+			border: 1px solid black;
+			font-weight: bold;
+			color: #000080;
+			img {
+			float: right;
+			margin-left: 10px;
+		}
+		
+
+    </style>
+
+<?php
 # The API Key, user, and the platform they play on are split up.
 $api_key = '053fa5a2-3abe-4cf2-bf30-4c793788a087';
 $user = 'MoonPaku';
@@ -59,6 +77,8 @@ $matchesplayed = $data['data']['segments'][0]['stats']['matchesPlayed']['value']
 //echo "<p>Revives: {$revives}</p>";
 //echo "<p>Matches Played: {$matchesplayed}</p>";
 ?>
+
+<img class="apex-image" src="apex.jpg" alt="Unlucky" width="500" height="400">
 <table border= "4">
 <tr>
 <td>Username</td>
@@ -80,8 +100,7 @@ $matchesplayed = $data['data']['segments'][0]['stats']['matchesPlayed']['value']
 <td><?php echo $revives;?></td>
 <td><?php echo $matchesplayed;?></td>
 </tr>
-
-
 </table>
+
 </body>
 </html>

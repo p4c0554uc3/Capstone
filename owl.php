@@ -1,6 +1,37 @@
 <?php
 require 'includes/database.php';
+?>
 
+<!DOCTYPE html>
+<html>
+<head>
+	    <title>Overwatch League Top 100</title>
+    <style>
+        * { font-family: Helvetica, sans-serif; }
+        .header {
+            font-size: 40px;
+            color: #000080;
+            text-align: center;
+        }
+        img {
+            max-width: 600px;
+            max-height: 400px;
+        }
+		body {
+		  background-color: #d8e0e8;
+		}
+		table, td, th{
+			border: 1px solid black;
+			font-weight: bold;
+			color: #000080;
+			}
+		
+
+    </style>
+</head>
+<body>
+    <h1 class="header">Overwatch League Rankings</h1>
+<?php
 $conn = getDB();
 
 // Retrieve all data from the database
@@ -26,3 +57,5 @@ echo "</table>";
 
 $conn->close();
 ?>
+</body>
+</html>

@@ -1,9 +1,42 @@
 <?php
 
 require 'includes/database.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Clash Royale Player Information</title>
+    <style>
+        * { font-family: Helvetica, sans-serif; }
+        .header {
+            font-size: 40px;
+            color: #000080;
+            text-align: center;
+        }
+        img {
+            max-width: 600px;
+            max-height: 400px;
+        }
+		body {
+		  background-color: #d8e0e8;
+		}
+		table, td, th{
+			border: 1px solid black;
+			font-weight: bold;
+			color: #000080;
+			}
+		
+
+    </style>
+</head>
+<body>
+    <h1 class="header">Clash Royale Player Information</h1>
+<?php
 $conn = getDB();
 // Retrieve all data from the database
 $result = $conn->query("SELECT * FROM clash_royale");
+
 
 // Display the data in a table
 echo "<table>";
@@ -24,4 +57,9 @@ while ($row = $result->fetch_assoc()) {
 
 echo "</table>";
 
+echo '<div style="float:right;">';
+echo '<img src="Knight.png">';
+echo '</div>';
 ?>
+</body>
+</html>
