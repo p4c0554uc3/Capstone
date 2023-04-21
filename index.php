@@ -32,7 +32,7 @@
 		<br><br><a href="giantbombapi/favoriteGames.php">My Favorite Games List</a>
 		<br><br><a href="Valorant/Jolade_Stage3.php">Top 100 Valorant NA</a>
 		<br><br><a href="Apex/capstoneseverstyle.php">Apex Legends Player Information</a>
-		<br><br><a href="owl.php">Overwatch League Rankings</a>
+		<br><br><a href="owl/owl_players.php">Overwatch League Rankings</a>
 	</body>
 </html>
  <?php 
