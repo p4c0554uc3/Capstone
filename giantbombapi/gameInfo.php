@@ -14,9 +14,11 @@ require 'includes/database.php';
 			font-weight: bold;
             text-align: center;
         }
+		body {
+		  background-color: #d8e0e8;
+		}
     </style>
 </head>
-<body style="background-color: #d8e0e8;">
     <div class="header">
         Add Game
     </div>

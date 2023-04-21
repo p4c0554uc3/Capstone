@@ -20,7 +20,7 @@ $conn->close();
         * { font-family: Helvetica, sans-serif; }
         .header {
             font-size: 40px;
-            color: darkorange;
+            color: #000080;
             text-align: center;
         }
         img {
@@ -36,7 +36,9 @@ $conn->close();
             flex-wrap: wrap;
             align-items: flex-start;
         }
-		
+		body {
+		  background-color: #d8e0e8;
+		}
 
     </style>
 </head>
